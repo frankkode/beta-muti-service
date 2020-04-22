@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 import os
-import env
+#import env
 import dj_database_url
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
