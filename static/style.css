@@ -95,6 +95,7 @@ h6 {
     line-height: 1.4em;
     text-transform: uppercase;
     position: relative;
+    font-family: 'Orbitron', sans-serif;
 }
 
 h2 {
@@ -253,6 +254,7 @@ input:-webkit-autofill:focus {
 }
 
 .area-title {
+
     margin-bottom: 50px;
     position: relative;
 }
@@ -511,10 +513,11 @@ ul#nav {
 
 ul#nav li a {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #ffffff;
+    color: #e99090;
     letter-spacing: 1px;
     padding: 40px 15px;
     text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -526,7 +529,8 @@ ul#nav li.active a {
 
 .is-sticky ul#nav li a {
     padding: 20px 15px;
-    color: #ffffff;
+    color: #e97e7e;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .is-sticky ul#nav li a:hover,
@@ -687,12 +691,23 @@ ul#nav li ul a,
 
 .welcome-text h4 {
     margin-bottom: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.welcome-big {
+    font-family: 'Monoton', cursive;
 }
 
 .welcome-text h2 {
     color: #fff;
     line-height: 1;
     margin-bottom: 30px;
+    font-family: 'Pinyon Script', cursive;
+}
+
+.font-home {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
 }
 
 .welcome-slider-area.home-button {
@@ -715,11 +730,11 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: url(img/slider/truck-1.png) no-repeat scroll center center / cover;
+    background: url(img/slider/truck4.png) no-repeat scroll center center / cover;
 }
 
 .slider-bg-two {
-    background: url(img/slider/truck3.jpg) no-repeat scroll center center / cover;
+    background: url(img/slider/car8.jpg) no-repeat scroll center center / cover;
 }
 
 .slider-bg-three {
@@ -934,7 +949,7 @@ ul#nav li ul a,
 }
 
 .service-catalouge-content-area {
-    background: rgba(0, 0, 0, 0) url("img/service/service-cargo-bg.png") no-repeat scroll center center / contain;
+    background: rgba(0, 0, 0, 0) url("img/service/truck4.png") no-repeat scroll center center / contain;
     position: relative;
 }
 
@@ -1161,7 +1176,7 @@ ul#nav li ul a,
 }
 
 .promo-botton-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/promo/promo_bottom_bg.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) url("img/promo/truck0.png") no-repeat scroll center center / cover;
     height: 100%;
     left: 0;
     position: absolute;
