@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+            <!--END MAINMENU AREA END-->
+        </div>
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Car Details</h2>
+                            <ul class="page-location">
+                                <li><a href="/">Home</a></li>
+                                <li>/</li>
+                                <li><a href="#">Car Details</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+    <!--BLOG AREA-->
+    <section class="blog-area blog-page section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                    <div class="single-blog wow fadeIn">
+                        <div class="blog-image">
+                           <img src="{{ post.thumbnail.url }}" alt="..." class="img-fluid img-thumbnail">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-ship"></i></a></div>
+                            <h3><a href="#">{{ post.title }}</a></h3>
+                            <div class="post-date"><a href="#"><i class="fa fa-calendar"></i>{{ post.timestamp|timesince }}</a></div>
+                            <p>{{ post.content | safe }}</p>
+                            
+                        </div>
+                    </div>
+                    <div class="share-button">
+                        <div class="social-bookmark">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    {% for comment in post.get_comments %}
+                    <div class="comments-area">
+                        <h4>02 Comment</h4>
+                        <ul>
+                            <li>
+                                <div class="comments-author-thumb">
+                                    {% if comment.user.author %}
+                           <div class="avatar mb-4"><img src="{{ comment.user.author.profile_picture.url }}" alt="..." class="img-fluid rounded-circle mb-4 img-thumbnail"></div>
+                          {% else %}
+                          <img src="{% static 'img/user.svg' %}" alt="..." class="img-fluid rounded-circle mb-4 img-thumbnail">
+                          {% endif %}
+                                </div>                              
+                                <div class="commment-details">
+                                    <div class="author-name-and-date">
+                                        <h5>{{ comment.user.username }}</h5>
+                                        <p>{{ comment.timestamp|timesince }} ago</p>
+                                    </div>
+                                    <div class="comment-text">
+                                        <p>{{ comment.content }}</p>
+                                    </div>
+                                    <a href="#" class="replay-link">Replay</a>
+                                </div>
+                                {% endfor %}
+                            </li>
+                            
+                        </ul>
+                    </div>
+                 <!--   {% if request.user.is_authenticated %}
+                    <div class="comments-form-area  ">
+                        <h4>Leave A Comment</h4>
+                        <form method="POST" action="#" class="comment-form">
+                         {% csrf_token %}
+                            {{ form|crispy }}
+                            <button type="submit">Post Comment</button>
+                        </form>
+                         
+                    </div>
+                    {% else %}
+                <a href="/login" class="btn btn-primary">Login to comment</a>
+                {% endif %}
+                </div>-->
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="sidebar-area wow fadeIn">
+                        <div class="single-sidebar-widget widget_search">
+                            <h4>Search</h4>
+                            <form action="{% url 'search' %}">
+                                <input type="text" name="q" id="s" placeholder="Search Here...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="single-sidebar-widget widget_categories">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">Road Freight</a></li>
+                                <li><a href="#">Air Freight</a></li>
+                                <li><a href="#">Sea Freight</a></li>
+                                <li><a href="#">Ware House Freight</a></li>
+                                <li><a href="#">Rail Freight</a></li>
+                            </ul>
+                        </div>
+                        <div class="single-sidebar-widget widget_recent_entries">
+                            <h4>Latest Post</h4>
+                            <ul>
+                                <li>
+                                    <div class="alignleft"><img src="{% static 'img/blog/thumb-1.jpg' %}" alt=""></div>
+                                    <a href="#">2016 Latest News From Logistics Transportation Service.</a>
+                                </li>
+                                <li>
+                                    <div class="alignleft"><img src="{% static 'img/blog/thumb-2.jpg' %}" alt=""></div>
+                                    <a href="#">2016 Latest News From Logistics Cargo Service.</a>
+                                </li>
+                                <li>
+                                    <div class="alignleft"><img src="{% static 'img/blog/thumb-3.jpg' %}" alt=""></div>
+                                    <a href="#">2016 Latest News From Logistics Transportation Service.</a>
+                                </li>
+                                <li>
+                                    <div class="alignleft"><img src="{% static 'img/blog/thumb-4.jpg' %}" alt=""></div>
+                                    <a href="#">2016 Latest News From Logistics Cargo Service.</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="single-sidebar-widget widget_tag_cloud">
+                            <h4>Pupular Tags</h4>
+                            <div class="tagcloud">
+                                <a href="#">Design</a>
+                                <a href="#">Transport</a>
+                                <a href="#">Cargo</a>
+                                <a href="#">Freight</a>
+                                <a href="#">Logistic</a>
+                                <a href="#">Truck</a>
+                                <a href="#">Shipping</a>
+                                <a href="#">ware house</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--BLOG AREA END-->
+
+    {% endblock content %}

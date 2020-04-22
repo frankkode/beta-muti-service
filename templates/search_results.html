@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="intro intro-single route bg-image" style="background-image: url({% static 'img/overlay-bg.jpg'%})">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="intro-title mb-4"></h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="/"></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/login"></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/register"></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/logout"></a>
+            </li>
+            <li class="breadcrumb-item active">Data</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--/ Intro Skew Star /-->
+  <div class="intro intro-single route bg-image" style="background-image: url({% static 'img/overlay-bg.jpg'%})">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container ">
+          <h2 class="intro-title mt-5 text-center" style="color:green; margin-top:30px;">Search results...</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="/">Home</a>
+            </li>
+            
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+<div class="container">
+<div class="row">
+
+<div class="center mt-4 ml-4" >
+{% if post in queryset %}
+    <a  " href="{{ post.get_absolute_url }}"><span style="color:green;"><i class="fab fa-creative-commons-share"></i>-{{ post.title }}</span></a>
+    <br />
+    {% else %}
+    <h4 class="text-center" style="color:orange;"> There is no results try other word!!!</h4>
+{% endif %}
+</div>
+</div>
+</div>
+{% endblock %}

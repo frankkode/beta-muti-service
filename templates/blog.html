@@ -1,0 +1,70 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        </div>
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Our Cars</h2>
+                            <ul class="page-location">
+                                <li><a href="/">Home</a></li>
+                                <li>/</li>
+                                <li><a href="#">Our Cars</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+    <!--BLOG AREA-->
+    <section class="blog-area blog-page section-padding">
+        <div class="container">
+            <div class="row">
+            {% for post in queryset %}
+                <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                    <div class="single-blog wow fadeIn">
+                        <div class="blog-image">
+                            <a href="{{ post.get_absolute_url }}"><img src="{{ post.thumbnail.url }}" alt="..." class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-ship"></i></a></div>
+                            <h3><a href="single-blog.html">{{ post.title }}</a></h3>
+                            <div class="post-date"><a href="#"><i class="fa fa-calendar"></i>{{ post.timestamp|timesince }}</a></div>
+                            <p>{{ post.overview|linebreaks|truncatechars:100 }}</p>
+                            
+                            <a href="{{ post.get_absolute_url }}" class="read-more">Capacity</a>
+                        </div>
+                                   
+                    </div>
+                     
+                      </div>
+                     {% endfor %}
+                    </div>
+                     
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <ul class="pagination">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--BLOG AREA END-->
+
+ {% endblock content %}
