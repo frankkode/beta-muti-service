@@ -117,7 +117,7 @@ jQuery(document).on('ready', function ($) {
             }
         }
     });
-    
+
     var client_photo = $('.client_photo');
     client_photo.owlCarousel({
         loop: true,
@@ -200,16 +200,12 @@ jQuery(document).on('ready', function ($) {
     ----------------------------*/
     new WOW().init();
 
+    jQuery(window).load(function () {
+        jQuery('.preloader').fadeOut();
+        jQuery('.preloader-spinner').delay(350).fadeOut('slow');
+        jQuery('body').removeClass('loader-active');
+        jQuery(".popular-car-gird").isotope();
+    }); //window load End
+
 
 }(jQuery));
-
-
-
-jQuery(window).on('load', function () {
-    "use strict";
-    /*--------------------------
-        PRE LOADER
-    ----------------------------*/
-    $(".preeloader").fadeOut(1000);
-
-});

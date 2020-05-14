@@ -512,9 +512,10 @@ ul#nav {
 }
 
 ul#nav li a {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #e99090;
+    background: transparent none repeat scroll 0 0;
+    color: #f7f7f7;
     letter-spacing: 1px;
+    font-size: 35px;
     padding: 40px 15px;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
@@ -660,11 +661,10 @@ ul#nav li ul a,
 }
 
 .welcome-single-slide:before {
-    background: #3c4147;
+    background: transparent;
     content: "";
     height: 100%;
     left: 0;
-    opacity: 0.7;
     position: absolute;
     top: 0;
     width: 100%;
@@ -672,7 +672,7 @@ ul#nav li ul a,
 }
 
 .welcome-slider-area .welcome-text {
-    color: #FFFFFF;
+    color: transparent;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -707,7 +707,14 @@ ul#nav li ul a,
 
 .font-home {
     font-family: 'Pinyon Script', cursive;
-    font-size: 40px;
+    font-size: 60px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    .font-home {
+        font-family: 'Pinyon Script', cursive;
+        font-size: 30px;
+    }
 }
 
 .welcome-slider-area.home-button {
@@ -730,15 +737,15 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: url(img/slider/truck4.png) no-repeat scroll center center / cover;
+    background: url(img/slider/main-truck.png) no-repeat scroll center center / cover;
 }
 
 .slider-bg-two {
-    background: url(img/slider/car8.jpg) no-repeat scroll center center / cover;
+    background: url(img/slider/town.jpg) no-repeat scroll center center / cover;
 }
 
 .slider-bg-three {
-    background: url(img/slider/truck0.jpg) no-repeat scroll center center / cover;
+    background: url(img/slider/town2.jpg) no-repeat scroll center center / cover;
 }
 
 .welcome-slider-area.owl-carousel .owl-nav>div {
@@ -752,6 +759,21 @@ ul#nav li ul a,
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     width: 40px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+    .welcome-slider-area.owl-carousel .owl-nav>div {
+        background: #fff none repeat scroll 0 0;
+        display: inline-block;
+        font-size: 20px;
+        height: 40px;
+        margin: 0 5px;
+        padding-top: 5px;
+        text-align: center;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        width: 40px;
+    }
 }
 
 .welcome-slider-area.owl-carousel .owl-controls {

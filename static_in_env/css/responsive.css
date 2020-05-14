@@ -1,66 +1,42 @@
 /*------------------------------
     PRELOADER
 -------------------------------*/
+/*== Preloader Area CSS Start ==*/
 
-.preeloader {
-    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
-    height: 100%;
-    position: fixed;
+body.loader-active {
+    position: absolute;
     width: 100%;
-    z-index: 999999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
 }
 
 .preloader-spinner {
-    -webkit-animation: 1s ease-out 0s normal none infinite running pulsate;
-    animation: 1s ease-out 0s normal none infinite running pulsate;
-    border: 5px solid #25fe03;
-    border-radius: 40px;
-    display: block;
-    height: 40px;
     left: 50%;
-    margin: -20px 0 0 -20px;
-    opacity: 0;
-    position: fixed;
     top: 50%;
-    width: 40px;
-    z-index: 10;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
-@-webkit-keyframes pulsate {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0.1);
-        transform: scale(0.1);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+.loader-content {
+    width: 150px;
 }
 
-@keyframes pulsate {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0.1);
-        transform: scale(0.1);
-    }
+/*== Preloader Area CSS End ==*/
 
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-}
 
 
 /*----------------------------------
