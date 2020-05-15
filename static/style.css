@@ -513,9 +513,9 @@ ul#nav {
 
 ul#nav li a {
     background: transparent none repeat scroll 0 0;
-    color: #fa0404;
+    color: rgb(255, 89, 0);
     letter-spacing: 1px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 40px 15px;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
@@ -530,7 +530,7 @@ ul#nav li.active a {
 
 .is-sticky ul#nav li a {
     padding: 20px 15px;
-    color: #e97e7e;
+    color: rgb(255, 89, 0);
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -544,7 +544,7 @@ ul#nav li.active a {
 }
 
 .is-sticky .mainmenu-area {
-    background: #212121;
+    background: #fec18d;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     z-index: 99999;
@@ -1157,14 +1157,26 @@ ul#nav li ul a,
     background: #f39c12 none repeat scroll 0 0;
 }
 
+.text-orange {
+    color: #f99500;
+}
+
+.text-white {
+    color: #ddd;
+}
+
+.text-black {
+    color: black;
+}
+
 /* ----------------------------
     7. PROMO AREA
------------------------------ */
+
 
 .promo-top-area {
     background: rgba(0, 0, 0, 0) url("img/promo/promo_top_bg.png") no-repeat scroll right 5% bottom 50% / 40% auto;
 }
-
+----------------------------- */
 .single-promo {
     margin-bottom: 50px;
     padding: 20px 20px 20px 80px;
@@ -1642,12 +1654,13 @@ ul#nav li ul a,
 .single-service-two {
     padding: 30px 20px 30px 100px;
     position: relative;
+    background-color: transparent;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 
 .service-icon-two {
-    border-right: 1px solid #ddd;
+    border-right: 3px solid rgb(177, 247, 38);
     color: #f39c12;
     font-size: 30px;
     left: 0;
@@ -1657,7 +1670,7 @@ ul#nav li ul a,
 }
 
 .service-icon-env {
-    border-right: 1px solid #ddd;
+    border-right: 3px solid rgb(177, 247, 38);
     color: #41ff02;
     font-size: 30px;
     left: 0;
@@ -1667,7 +1680,7 @@ ul#nav li ul a,
 }
 
 .service-icon-pro {
-    border-right: 1px solid #ddd;
+    border-right: 3px solid rgb(177, 247, 38);
     color: #f34e12;
     font-size: 30px;
     left: 0;
@@ -1677,7 +1690,7 @@ ul#nav li ul a,
 }
 
 .service-icon-mvi {
-    border-right: 1px solid #ddd;
+    border-right: 3px solid rgb(177, 247, 38);
     color: #7012f3;
     font-size: 30px;
     left: 0;
@@ -1687,8 +1700,8 @@ ul#nav li ul a,
 }
 
 .service-icon-mvo {
-    border-right: 1px solid #ddd;
-    color: #f39c12;
+    border-right: 3px solid rgb(177, 247, 38);
+    color: #d5f312;
     font-size: 30px;
     left: 0;
     position: absolute;
@@ -1697,7 +1710,7 @@ ul#nav li ul a,
 }
 
 .service-icon-tra {
-    border-right: 1px solid #ddd;
+    border-right: 3px solid rgb(177, 247, 38);
     color: #f31286;
     font-size: 30px;
     left: 0;

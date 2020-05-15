@@ -354,12 +354,12 @@ body.loader-active {
     }
 
     .mainmenu-area {
-        background: #272727 none repeat scroll 0 0;
+        background: transparent none repeat scroll 0 0;
     }
 
     ul#nav li a,
     .is-sticky ul#nav li a {
-        color: #fff;
+        color: bisque;
         padding: 10px 15px;
     }
 
@@ -525,7 +525,7 @@ body.loader-active {
     }
 
     .single-service-two {
-        border: 1px solid #ddd;
+        border: 1px solid rgb(254, 135, 31);
         margin-bottom: -1px;
     }
 
@@ -575,6 +575,17 @@ body.loader-active {
 
 }
 
+.text-orange {
+    color: #f99500;
+}
+
+.text-white {
+    color: #ddd;
+}
+
+.text-black {
+    color: black;
+}
 
 /*----------------------------------
     WIDE MOBILE LAYOUT: 480px
