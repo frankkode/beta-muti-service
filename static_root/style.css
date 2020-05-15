@@ -208,7 +208,7 @@ a {
 }
 
 .navbar-toggle {
-    border: 2px solid #f39c12;
+    border: 4px solid #f39c12;
     border-radius: 0;
 }
 
@@ -477,7 +477,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area {
-    border-bottom: 1px solid rgba(243, 156, 18, .4);
+    border-bottom: 3px solid rgb(252, 156, 2);
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -512,8 +512,8 @@ ul#nav {
 }
 
 ul#nav li a {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #e99090;
+    background: rgb(180, 254, 9) none repeat scroll 0 0;
+    color: #ff6702;
     letter-spacing: 1px;
     padding: 40px 15px;
     text-transform: uppercase;
@@ -529,7 +529,7 @@ ul#nav li.active a {
 
 .is-sticky ul#nav li a {
     padding: 20px 15px;
-    color: #e97e7e;
+    color: #8aff41;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -543,7 +543,7 @@ ul#nav li.active a {
 }
 
 .is-sticky .mainmenu-area {
-    background: #212121;
+    background: #c7fe01;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     z-index: 99999;

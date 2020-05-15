@@ -67,7 +67,7 @@ body.loader-active {
     }
 
     .is-sticky ul#nav li a {
-        padding: 22px 10px;
+        padding: 30px 10px;
     }
 
     .welcome-text h1 {
@@ -135,9 +135,9 @@ body.loader-active {
     }
 
     .navbar-header {
-        border-bottom: 1px solid #f39c12;
+        border-bottom: 3px solid #f39c12;
         margin: 0;
-        padding: 15px 0;
+        padding: 25px 0;
     }
 
     ul#nav {
@@ -166,13 +166,13 @@ body.loader-active {
     }
 
     .mainmenu-area {
-        background: #272727 none repeat scroll 0 0;
+        background: #f2ff00 none repeat scroll 0 0;
     }
 
     ul#nav li a,
     .is-sticky ul#nav li a {
-        color: #fff;
-        padding: 10px 15px;
+        color: rgb(255, 89, 0);
+        padding: 20px 15px;
     }
 
     ul#nav li a::after {

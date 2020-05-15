@@ -513,9 +513,9 @@ ul#nav {
 
 ul#nav li a {
     background: transparent none repeat scroll 0 0;
-    color: #f7f7f7;
+    color: #fa0404;
     letter-spacing: 1px;
-    font-size: 35px;
+    font-size: 30px;
     padding: 40px 15px;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
@@ -1300,7 +1300,7 @@ ul#nav li ul a,
     border-radius: 5px;
     color: #fff;
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     height: 40px;
     left: 50px;
     opacity: 0;
@@ -1649,6 +1649,56 @@ ul#nav li ul a,
 .service-icon-two {
     border-right: 1px solid #ddd;
     color: #f39c12;
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+}
+
+.service-icon-env {
+    border-right: 1px solid #ddd;
+    color: #41ff02;
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+}
+
+.service-icon-pro {
+    border-right: 1px solid #ddd;
+    color: #f34e12;
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+}
+
+.service-icon-mvi {
+    border-right: 1px solid #ddd;
+    color: #7012f3;
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+}
+
+.service-icon-mvo {
+    border-right: 1px solid #ddd;
+    color: #f39c12;
+    font-size: 30px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+}
+
+.service-icon-tra {
+    border-right: 1px solid #ddd;
+    color: #f31286;
     font-size: 30px;
     left: 0;
     position: absolute;
