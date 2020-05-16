@@ -312,7 +312,7 @@ body.loader-active {
 
 @media only screen and (max-width: 767px) {
     .section-padding {
-        padding: 50px 0;
+        padding: 150px 0;
     }
 
     .area-title {
@@ -611,8 +611,4 @@ body.loader-active {
     ul#nav li {
         float: none;
     }
-}
-
-.espace {
-    height: 30px;
 }
