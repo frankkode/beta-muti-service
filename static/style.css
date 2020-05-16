@@ -93,7 +93,7 @@ h6 {
     margin: 0 0 15px;
     font-weight: 700;
     line-height: 1.4em;
-    text-transform: uppercase;
+
     position: relative;
     font-family: 'Orbitron', sans-serif;
 }
@@ -354,7 +354,7 @@ input:-webkit-autofill:focus {
 }
 
 .top-area-bg {
-    background: url("img/slider/truck0.png") no-repeat scroll center center / cover;
+    background: url("img/slider/truck.jpg") no-repeat scroll center center / cover;
     height: 100%;
     left: 0;
     position: absolute;
@@ -696,7 +696,9 @@ ul#nav li ul a,
 
 .welcome-big {
     font-family: 'Monoton', cursive;
-    font-size: 7;
+    font-size: 27;
+    color: chocolate;
+    width: 70%;
 }
 
 .welcome-text h2 {
@@ -738,7 +740,7 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: url(img/slider/main-truck.png) no-repeat scroll center center / cover;
+    background: url(img/slider/truck.jpg) no-repeat scroll center center / cover;
 }
 
 .slider-bg-two {

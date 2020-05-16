@@ -42,6 +42,12 @@ body.loader-active {
 /*----------------------------------
     LARGE LAYOUT: 1920px
 -----------------------------------*/
+.welcome-big {
+    font-family: 'Monoton', cursive;
+    font-size: 47;
+    color: chocolate;
+    text-align: center;
+}
 
 @media only screen and (min-width: 1920px) {
 
