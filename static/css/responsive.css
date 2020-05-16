@@ -104,7 +104,7 @@ body.loader-active {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .section-padding {
-        padding: 185px 0;
+        padding: 250px 0;
     }
 
     .padding-top {
@@ -135,7 +135,6 @@ body.loader-active {
     }
 
     .navbar-header {
-        border-bottom: 3px solid #f39c12;
         margin: 0;
         padding: 25px 0;
     }
@@ -349,7 +348,7 @@ body.loader-active {
         padding: 8px;
     }
 
-    .navbar-brand {
+    .is-sticky .navbar-brand {
         margin-top: -3px;
     }
 
@@ -357,8 +356,9 @@ body.loader-active {
         background: transparent none repeat scroll 0 0;
     }
 
-    ul#nav li a {
-        color: coral;
+    ul#nav li a,
+    .is-sticky ul#nav li a {
+        color: bisque;
         padding: 10px 15px;
     }
 
@@ -366,11 +366,11 @@ body.loader-active {
         display: none;
     }
 
-    .navbar-brand>img {
+    .is-sticky .navbar-brand>img {
         max-width: 100%;
     }
 
-    .menu-toggle.full {
+    .is-sticky .menu-toggle.full {
         top: 18px;
     }
 
@@ -614,7 +614,7 @@ body.loader-active {
 
 @media only screen and (min-width: 1024px) and (max-width: 3000px) {
     .section-padding {
-        padding: 210px 0;
+        padding: 240px 0;
     }
 
     .area-title h2 {
