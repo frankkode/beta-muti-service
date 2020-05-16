@@ -1654,7 +1654,7 @@ ul#nav li ul a,
 .single-service-two {
     padding: 30px 20px 30px 100px;
     position: relative;
-    background-color: transparent;
+    background-color: antiquewhite;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
