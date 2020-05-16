@@ -354,7 +354,7 @@ input:-webkit-autofill:focus {
 }
 
 .top-area-bg {
-    background: rgba(0, 0, 0, 0) url("img/slider/truck0.png") no-repeat scroll center center / cover;
+    background: url("img/slider/truck0.png") no-repeat scroll center center / cover;
     height: 100%;
     left: 0;
     position: absolute;
@@ -363,7 +363,7 @@ input:-webkit-autofill:focus {
 }
 
 .top-area-bg::after {
-    background: #3c4147;
+    background: #7e858e;
     content: "";
     height: 100%;
     left: 0;
@@ -420,7 +420,7 @@ input:-webkit-autofill:focus {
 }
 
 .is-sticky .search-form {
-    top: 50px;
+    top: 40px;
 }
 
 .search-form input {
@@ -477,7 +477,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area {
-    border-bottom: 1px solid rgba(243, 156, 18, .4);
+    border-bottom: 3px solid rgba(243, 156, 18, .4);
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -516,7 +516,7 @@ ul#nav li a {
     color: rgb(255, 89, 0);
     letter-spacing: 1px;
     font-size: 25px;
-    padding: 40px 15px;
+    padding: 30px 15px;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
     -webkit-transition: all 0.3s ease 0s;
@@ -529,7 +529,7 @@ ul#nav li.active a {
 }
 
 .is-sticky ul#nav li a {
-    padding: 20px 15px;
+    padding: 15px 15px;
     color: rgb(255, 89, 0);
     font-family: 'Orbitron', sans-serif;
 }
@@ -544,7 +544,7 @@ ul#nav li.active a {
 }
 
 .is-sticky .mainmenu-area {
-    background: #000000;
+    background: #1d2128;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     z-index: 99999;
@@ -696,6 +696,7 @@ ul#nav li ul a,
 
 .welcome-big {
     font-family: 'Monoton', cursive;
+    font-size: 7;
 }
 
 .welcome-text h2 {

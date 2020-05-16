@@ -349,7 +349,7 @@ body.loader-active {
         padding: 8px;
     }
 
-    .is-sticky .navbar-brand {
+    .navbar-brand {
         margin-top: -3px;
     }
 
@@ -357,9 +357,8 @@ body.loader-active {
         background: transparent none repeat scroll 0 0;
     }
 
-    ul#nav li a,
-    .is-sticky ul#nav li a {
-        color: transparent;
+    ul#nav li a {
+        color: coral;
         padding: 10px 15px;
     }
 
@@ -367,11 +366,11 @@ body.loader-active {
         display: none;
     }
 
-    .is-sticky .navbar-brand>img {
+    .navbar-brand>img {
         max-width: 100%;
     }
 
-    .is-sticky .menu-toggle.full {
+    .menu-toggle.full {
         top: 18px;
     }
 
