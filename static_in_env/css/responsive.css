@@ -104,7 +104,7 @@ body.loader-active {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .section-padding {
-        padding: 80px 0;
+        padding: 185px 0;
     }
 
     .padding-top {
@@ -166,7 +166,7 @@ body.loader-active {
     }
 
     .mainmenu-area {
-        background: #f2ff00 none repeat scroll 0 0;
+        background: transparent none repeat scroll 0 0;
     }
 
     ul#nav li a,
@@ -312,7 +312,7 @@ body.loader-active {
 
 @media only screen and (max-width: 767px) {
     .section-padding {
-        padding: 150px 0;
+        padding: 155px 0;
     }
 
     .area-title {
@@ -359,7 +359,7 @@ body.loader-active {
 
     ul#nav li a,
     .is-sticky ul#nav li a {
-        color: bisque;
+        color: transparent;
         padding: 10px 15px;
     }
 
@@ -594,7 +594,28 @@ body.loader-active {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .section-padding {
-        padding: 50px 0;
+        padding: 155px 0;
+    }
+
+    .area-title h2 {
+        font-size: 40px;
+    }
+
+    ul#nav {
+        width: 100%;
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    ul#nav li {
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 3000px) {
+    .section-padding {
+        padding: 210px 0;
     }
 
     .area-title h2 {
