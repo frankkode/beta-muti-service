@@ -467,6 +467,10 @@ input:-webkit-autofill:focus {
 /*---------------------------------
     2.2 MAINMENU AREA
 -----------------------------------*/
+.logo {
+    margin-top: 5px;
+    float: left;
+}
 
 .header-top-area {
     left: 0;
@@ -502,11 +506,11 @@ input:-webkit-autofill:focus {
 }
 
 .is-sticky .navbar-brand>img {
-    max-width: 80%;
+    max-width: 100%;
 }
 
 ul#nav {
-    float: right;
+    float: left;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
@@ -516,7 +520,7 @@ ul#nav li a {
     color: rgb(255, 89, 0);
     letter-spacing: 1px;
     font-size: 25px;
-    padding: 30px 15px;
+    padding: 30px;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
     -webkit-transition: all 0.3s ease 0s;
