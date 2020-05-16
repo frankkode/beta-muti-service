@@ -2,47 +2,49 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
-        
-    <!--END TOP AREA-->
 
-    <!--CONTACT US AREA-->
-    <section class="contact-area" id="contact">
-        
-        <div class="contact-form-area section-padding gray-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="area-title text-center">
-                            <h3 style="color:orange;">GET IN TOUCH</h3>
-                            <p style="color:yellow;">Need any help just send a message to us</p>
-                        </div>
+<!--END TOP AREA-->
+<div class="espace">
+
+</div>
+<!--CONTACT US AREA-->
+<section class="contact-area" id="contact">
+
+    <div class="contact-form-area section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="area-title text-center">
+                        <h3 style="color:orange;">GET IN TOUCH</h3>
+                        <p style="color:rgb(0, 255, 200);">Need any help just send a message to us</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-                        <div class="contact-form">
-                            <form method="post">
-                                {% csrf_token %}
-    {{ form|crispy }}
-                                    
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                                        <div class="form-group">
-                                            <button type="submit">Send</button>
-                                        </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                    <div class="contact-form">
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <button type="submit">Send</button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                        <div class="contact-image text-center">
-                            <img src="{% static 'img/contact-right.png' %}" alt="">
-                        </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="contact-image text-center">
+                        <img src="{% static 'img/contact-right.png' %}" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--CONTACT US AREA END-->
+    </div>
+</section>
+<!--CONTACT US AREA END-->
 {% endblock content %}

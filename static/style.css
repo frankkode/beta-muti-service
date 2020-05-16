@@ -2322,3 +2322,7 @@ blockquote::before {
 .error-area .read-more {
     width: auto;
 }
+
+.espace {
+    height: 30px;
+}
