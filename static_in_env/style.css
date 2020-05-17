@@ -1838,7 +1838,7 @@ ul#nav li ul a,
 
 .single-footer-widget,
 .single-footer-widget a {
-    color: #a1a7b2;
+    color: #ff9421;
 }
 
 .single-footer-widget a:hover {
@@ -1936,7 +1936,7 @@ ul#nav li ul a,
 }
 
 .footer-social-bookmark .social-bookmark li a {
-    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    background: rgb(235, 107, 78) none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
