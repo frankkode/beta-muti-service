@@ -744,7 +744,7 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: url(img/slider/truck.jpg) no-repeat scroll center center / cover;
+    background: grey url(img/about/people.jpg) no-repeat scroll center center / cover;
 }
 
 .slider-bg-two {
