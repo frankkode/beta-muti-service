@@ -42,13 +42,7 @@ body.loader-active {
 /*----------------------------------
     LARGE LAYOUT: 1920px
 -----------------------------------*/
-.welcome-big {
-    font-family: 'Monoton', cursive;
-    font-size: 47;
-    color: rgb(250, 9, 9);
-    color: linear-gradient(90deg, rgba(250, 9, 9, 1) 0%, rgba(27, 9, 121, 1) 55%, rgba(20, 255, 0, 1) 100%);
-    text-align: center;
-}
+
 
 .logo {
     margin-top: 5px;
@@ -164,7 +158,7 @@ body.loader-active {
 
     .is-sticky .navbar-header {
         margin: 0;
-        padding: 5px 0;
+        padding: 15px 0;
     }
 
     .navbar-brand {
@@ -183,7 +177,7 @@ body.loader-active {
     ul#nav li a,
     .is-sticky ul#nav li a {
         color: rgb(255, 89, 0);
-        padding: 20px 15px;
+        padding: 30px 15px;
     }
 
     ul#nav li a::after {
@@ -366,6 +360,7 @@ body.loader-active {
 
     .mainmenu-area {
         background: transparent none repeat scroll 0 0;
+        height: 70px;
     }
 
     ul#nav li a,
@@ -383,7 +378,7 @@ body.loader-active {
     }
 
     .is-sticky .menu-toggle.full {
-        top: 18px;
+        top: 8px;
     }
 
     /*-----------------*/

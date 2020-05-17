@@ -208,7 +208,7 @@ a {
 }
 
 .navbar-toggle {
-    border: 2px solid #f39c12;
+    border: 1px solid #f39c12;
     border-radius: 0;
 }
 
@@ -427,7 +427,7 @@ input:-webkit-autofill:focus {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
     border: 1px solid #f39c12;
     color: #333;
-    height: 40px;
+    height: 60px;
     left: 11px;
     padding: 10px;
     position: absolute;
@@ -481,7 +481,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area {
-    border-bottom: 3px solid rgba(243, 156, 18, .4);
+    border-bottom: 0.5px solid rgba(243, 156, 18, .4);
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -489,7 +489,7 @@ input:-webkit-autofill:focus {
 }
 
 .navbar-header {
-    margin-top: 14px;
+    margin-top: 10px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -506,7 +506,7 @@ input:-webkit-autofill:focus {
 }
 
 .is-sticky .navbar-brand>img {
-    max-width: 100%;
+    max-width: 70%;
 }
 
 ul#nav {
@@ -519,7 +519,7 @@ ul#nav li a {
     background: transparent none repeat scroll 0 0;
     color: rgb(255, 89, 0);
     letter-spacing: 1px;
-    font-size: 25px;
+    font-size: 20px;
     padding: 30px;
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
@@ -548,7 +548,8 @@ ul#nav li.active a {
 }
 
 .is-sticky .mainmenu-area {
-    background: #1d2128;
+    background: #5d6b82;
+    height: 95px;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     z-index: 99999;
@@ -556,15 +557,15 @@ ul#nav li.active a {
 
 .menu-toggle.full {
     border: 1px solid;
-    height: 40px;
+    height: 50px;
     letter-spacing: 2px;
-    padding-top: 8px;
+    padding-top: 15px;
     position: absolute;
     right: 15px;
     text-align: center;
-    top: 20px;
-    width: 110px;
-    color: #f39c12 !important;
+    top: 10px;
+    width: 80px;
+    color: #fc9c01 !important;
 }
 
 .is-sticky .menu-toggle.full {
@@ -574,7 +575,7 @@ ul#nav li.active a {
 ul#nav li ul a,
 .is-sticky ul#nav li ul a {
     border-bottom: 1px solid #1a1a1a;
-    padding: 10px;
+    padding: 30px;
     padding-left: 15px;
 }
 
@@ -700,9 +701,20 @@ ul#nav li ul a,
 
 .welcome-big {
     font-family: 'Monoton', cursive;
-    font-size: 27;
-    color: chocolate;
-    width: 70%;
+    font-size: 37px;
+    margin-top: 15px;
+    text-align: center;
+
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+    .welcome-big {
+        font-family: 'Monoton', cursive;
+        font-size: 15px;
+        width: 85%;
+        margin-top: 15px;
+    }
 }
 
 .welcome-text h2 {
@@ -744,7 +756,7 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: grey url(img/slider/trans.jpg) no-repeat scroll center center / cover;
+    background: grey url(img/slider/fan.jpg) no-repeat scroll center center / cover;
 }
 
 .slider-bg-two {
