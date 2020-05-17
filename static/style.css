@@ -533,7 +533,7 @@ ul#nav li.active a {
 }
 
 .is-sticky ul#nav li a {
-    padding: 15px 15px;
+    padding: 35px 15px;
     color: rgb(255, 89, 0);
     font-family: 'Orbitron', sans-serif;
 }
@@ -549,7 +549,7 @@ ul#nav li.active a {
 
 .is-sticky .mainmenu-area {
     background: #5d6b82;
-    height: 95px;
+    height: 68px;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     z-index: 99999;
@@ -756,7 +756,7 @@ ul#nav li ul a,
 }
 
 .slider-bg-one {
-    background: grey url(img/slider/fan.jpg) no-repeat scroll center center / cover;
+    background: grey url(img/slider/tram.png) no-repeat scroll center center / cover;
 }
 
 .slider-bg-two {
