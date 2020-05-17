@@ -45,7 +45,8 @@ body.loader-active {
 .welcome-big {
     font-family: 'Monoton', cursive;
     font-size: 47;
-    color: chocolate;
+    color: rgb(250, 9, 9);
+    color: linear-gradient(90deg, rgba(250, 9, 9, 1) 0%, rgba(27, 9, 121, 1) 55%, rgba(20, 255, 0, 1) 100%);
     text-align: center;
 }
 
