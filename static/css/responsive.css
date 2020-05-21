@@ -69,11 +69,11 @@ body.loader-active {
     }
 
     ul#nav li a {
-        padding: 30px 10px;
+        padding: 10px 10px;
     }
 
     .is-sticky ul#nav li a {
-        padding: 30px 10px;
+        padding: 10px 10px;
     }
 
     .welcome-text h1 {
@@ -177,7 +177,7 @@ body.loader-active {
     ul#nav li a,
     .is-sticky ul#nav li a {
         color: rgb(255, 89, 0);
-        padding: 30px 15px;
+        padding: 10px 15px;
     }
 
     ul#nav li a::after {
@@ -314,6 +314,7 @@ body.loader-active {
 /*----------------------------------
     MOBILE LAYOUT: 320px
 -----------------------------------*/
+
 
 @media only screen and (max-width: 767px) {
     .section-padding {
