@@ -174,7 +174,7 @@ a {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: bottom;
 }
 
 .social-bookmark li {
@@ -518,7 +518,7 @@ ul#nav {
 
 ul#nav li a {
     background: transparent none repeat scroll 0 0;
-    color: rgb(255, 68, 0);
+    color: rgb(255, 81, 0);
     letter-spacing: 1px;
     font-size: 20px;
     border: 1px white solid;
@@ -539,13 +539,13 @@ ul#nav li.active a {
 
 .is-sticky ul#nav li a {
     padding: 10px 15px;
-    color: rgb(242, 110, 9);
+    color: #7d0a17;
     font-family: 'Orbitron', sans-serif;
 }
 
 .is-sticky ul#nav li a:hover,
 .is-sticky ul#nav li.active a {
-    color: #f39c12;
+    color: #f2f1f1;
     font-size: 25px;
 }
 
@@ -2346,4 +2346,9 @@ blockquote::before {
 
 .error-area .read-more {
     width: auto;
+}
+
+/*margin top*/
+.margintop {
+    margin-top: 20px;
 }
